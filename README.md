@@ -1,2 +1,2 @@
 # techno-test
-testing technologies
+THis repository is just for me to test features I am not yet familiar with.
