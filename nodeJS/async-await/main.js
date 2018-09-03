@@ -1,11 +1,11 @@
-async function f1() {
+async function f1(data) {
   const promise = new Promise(resolve => {
     setTimeout(() => {
       resolve(1);
     }, 1500)
   });
   let result = await promise;
-  console.log(result);
+  console.log(data);
 }
 
 async function f2() {
@@ -24,13 +24,13 @@ async function f3() {
     }, 1500)
   });
   let result = await promise;
-  console.log(result);
+  return result;
 }
 async function g() {
   try {
-    await f3();
+    let result = await f3();
     await f2().catch(console.log);
-    await f1();
+    await f1(result);
   }
   catch(e) {
     console.log('error',e);
