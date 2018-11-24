@@ -1,0 +1,52 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/index.html",
+        "/*.css",
+        "/*.js"
+      ],
+      "urls": [
+        "https://assets.cordantconnect.com/images/icons/apple-icon-57x57.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-60x60.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-72x72.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-76x76.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-114x114.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-120x120.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-144x144.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-152x152.png",
+        "https://assets.cordantconnect.com/images/icons/apple-icon-180x180.png",
+        "https://assets.cordantconnect.com/images/icons/android-icon-192x192.png",
+        "https://assets.cordantconnect.com/images/icons//favicon.ico",
+        "https://assets.cordantconnect.com/images/icons/favicon-32x32.png",
+        "https://assets.cordantconnect.com/images/icons/favicon-96x96.png",
+        "https://assets.cordantconnect.com/images/icons/favicon-16x16.png",
+        "https://fonts.googleapis.com/css?family=Oswald:300,700"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "posts",
+    "urls": [
+      "https://jsonplaceholder.typicode.com/posts"
+    ],
+    "cacheConfig": {
+      "maxSize": 10,
+      "maxAge": "12h",
+      "timeout": "5s",
+      "strategy": "freshness"
+    }
+  }]
+}
