@@ -1,0 +1,14 @@
+{
+  "name": "javascript-in-portgres",
+  "version": "1.0.0",
+  "description": "Testing a way to put functions in postgres",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg-promise": "^5.9.7"
+  }
+}
